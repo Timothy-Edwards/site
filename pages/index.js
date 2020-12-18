@@ -14,57 +14,8 @@ export default function Home() {
 
         <div className="grid">
           <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
-          </a>
-          <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
-          </a>
-          <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
-          </a>
-          <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
-          </a>
-          <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
-          </a>
-          <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
-          </a> <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is
-            what if there
-            was a Liberation
-            of contet>?
-            what if there
-            was a Liberation
-            of contet>?
-            what if there
-            was a Liberation
-            of contet>?
-            </p>
-          </a>
-          <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
-          </a>
-          <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
-          </a>
-          <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
-          </a>
-          <a href="/posts/first-post" className="card">
-            <h3>First post &rarr;</h3>
-            <p>This is where me first post is</p>
+            <h3>Hi &rarr;</h3>
+            <p>Hello :)</p>
           </a>
         </div>
       </main>
