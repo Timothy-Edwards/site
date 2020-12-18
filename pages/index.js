@@ -1,6 +1,14 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import React, { useState } from 'react';
 
 export default function Home() {
+  let [emoji, setEmoji] = useState('🤠');
+
+  const changeEmojii = () => {
+    const newEmoji = emoji === '🤠' ? '👽' : '🤠';
+    setEmoji(newEmoji);
+  }
+
   return (
     <div className="container">
       <Head>
@@ -8,8 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <h1 className="title">
-        Tim Edwards
-        </h1>
+        Tim Edwards <span>{emoji}</span>
+       </h1>
       <main>
 
         <div className="grid">
@@ -19,8 +27,8 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <footer>
-        🤠
+      <footer onClick={changeEmojii}>
+        {emoji}
       </footer>
 
       <style jsx>{`
@@ -58,6 +66,14 @@ export default function Home() {
           position: sticky;
           bottom: 0px;
           background-color: #70a86a;
+          cursor: pointer;
+
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
         }
 
         a {
