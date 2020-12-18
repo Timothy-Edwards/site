@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 export default function Home() {
   let [emoji, setEmoji] = useState('🤠');
 
-  const changeEmojii = () => {
+  const changeEmoji = () => {
     const newEmoji = emoji === '🤠' ? '👽' : '🤠';
     setEmoji(newEmoji);
   }
@@ -27,8 +27,8 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <footer onClick={changeEmojii}>
-        {emoji}
+      <footer>
+      🖱️&rarr;<span className="cursor" onClick={changeEmoji}>{emoji}</span>
       </footer>
 
       <style jsx>{`
@@ -58,6 +58,7 @@ export default function Home() {
         }
 
         footer {
+          font-family: consolas;
           width: 100%;
           height: 50px;
           display: flex;
@@ -66,6 +67,9 @@ export default function Home() {
           position: sticky;
           bottom: 0px;
           background-color: #70a86a;
+        }
+
+        .cursor {
           cursor: pointer;
 
           -webkit-touch-callout: none;
@@ -97,7 +101,7 @@ export default function Home() {
           height: 100px;
           line-height: 1.15;
           font-size: 4rem;
-          background-color: #70a86a;;
+          background-color: #316d89;
           width: 100%;
           top: 0px;
           position: sticky;
