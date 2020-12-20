@@ -14,19 +14,19 @@
   .card:hover,
   .card:focus,
   .card:active {
-    /* background-color: lightblue; */
+    background-color: lightblue;
     border: 2px solid #316d89;
   }
 
   .card h3 {
     margin: 0 0 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: consolas;
   }
 
   .card p {
     margin: 0;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
     line-height: 1.5;
     max-height: 4rem;
     text-overflow: elipsis;

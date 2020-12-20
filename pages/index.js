@@ -21,6 +21,9 @@ export default function Home() {
       </PageHeader>
 
       <style jsx>{`
+        h2 {
+          font-size: 1.85rem;
+        }
         .grid {
           display: flex;
           align-items: center;
