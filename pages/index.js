@@ -17,6 +17,24 @@ export default function Home() {
           <div className="grid">
             <PostCard header={"howdy"} tagline={"my tag line :)"} />
             <PostCard header={"hi again"} tagline={"my tag line against"} />
+            <PostCard header={"howdy"} tagline={"my tag line :)"} />
+            <PostCard header={"hi again"} tagline={"my tag line against"} />
+            <PostCard header={"howdy"} tagline={"my tag line :)"} />
+            <PostCard header={"hi again"} tagline={"my tag line against"} />
+            <PostCard header={"howdy"} tagline={"my tag line :)"} />
+            <PostCard header={"hi again"} tagline={"my tag line against"} />
+            <PostCard header={"howdy"} tagline={"my tag line :)"} />
+            <PostCard header={"hi again"} tagline={"my tag line against"} />
+            <PostCard header={"howdy"} tagline={"my tag line :)"} />
+            <PostCard header={"hi again"} tagline={"my tag line against"} />
+            <PostCard header={"howdy"} tagline={"my tag line :)"} />
+            <PostCard header={"hi again"} tagline={"my tag line against"} />
+            <PostCard header={"howdy"} tagline={"my tag line :)"} />
+            <PostCard header={"hi again"} tagline={"my tag line against"} />
+            <PostCard header={"howdy"} tagline={"my tag line :)"} />
+            <PostCard header={"hi again"} tagline={"my tag line against"} />
+            <PostCard header={"howdy"} tagline={"my tag line :)"} />
+            <PostCard header={"hi again"} tagline={"my tag line against"} />
           </div>
       </PageHeader>
 

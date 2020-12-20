@@ -20,7 +20,7 @@ export default function PageHeader({
       </main>
       <footer className={styles.footer}>
         🖱️&rarr;
-        <span className="cursor" onClick={changeEmoji}>
+        <span className={styles.cursor} onClick={changeEmoji}>
           {emoji}
         </span>
       </footer>

@@ -35,7 +35,7 @@
   align-items: center;
   position: sticky;
   bottom: 0px;
-  background-color: rgba(49, 109, 137, 0.69);
+  background-color: rgba(49, 109, 137, 0.90);
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -66,4 +66,8 @@
   align-items: center;
   background-color: white;
   overflow-y: scroll;
+}
+
+.cursor {
+    cursor: pointer;
 }
