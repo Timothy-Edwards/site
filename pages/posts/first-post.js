@@ -1,5 +1,5 @@
 import HeaderFooter from '../../components/HeaderFooter/HeaderFooter';
-export default  FirstPost = () => {
+export default function FirstPost() {
     return (
         <div>
             <HeaderFooter>
