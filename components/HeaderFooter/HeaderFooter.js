@@ -24,10 +24,7 @@ export default function PageHeader({ children: children }) {
         </footer>
       </div>
       <style jsx global>{`
-        ::-webkit-scrollbar {
-          width: 0px; /* Remove scrollbar space */
-          background: transparent; /* Optional: just make scrollbar invisible */
-        }
+
         
         html,
         body {
