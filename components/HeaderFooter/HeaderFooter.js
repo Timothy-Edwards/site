@@ -1,34 +1,34 @@
-import { loadGetInitialProps } from "next/dist/next-server/lib/utils";
 import Head from "next/head";
 import styles from "./HeaderFooter.module.css";
-export default function PageHeader({
-  emoji: emoji,
-  changeEmoji: changeEmoji,
-  children: children,
-}) {
+import { useState } from "react";
+export default function PageHeader({ children: children }) {
+  let [emoji, setEmoji] = useState("🤠");
+
+  const changeEmoji = () => {
+    const newEmoji = emoji === "🤠" ? "👽" : "🤠";
+    setEmoji(newEmoji);
+  };
   return (
     <div className={styles.container}>
       <Head>
         <title> Tim Edwards </title>
-        <link rel='icon' href='/favicon.png'/>
+        <link rel="icon" href="/favicon.png" />
       </Head>
-      <h1 className={styles.title}>
-        Tim Edwards <span> {emoji} </span>
-      </h1>
-      <main className={styles.main}>
-        {children}
-      </main>
-      <footer className={styles.footer}>
-        🖱️&rarr;
-        <span className={styles.cursor} onClick={changeEmoji}>
-          {emoji}
-        </span>
-      </footer>
+      <div className={styles.content}>
+        <h1 className={styles.title}>
+          <a href="/"> {emoji} </a>
+        </h1>
+        <main className={styles.main}>{children}</main>
+        <footer className={styles.footer}>
+         Made by Tim
+        </footer>
+      </div>
       <style jsx global>{`
         ::-webkit-scrollbar {
           width: 0px; /* Remove scrollbar space */
           background: transparent; /* Optional: just make scrollbar invisible */
         }
+        
         html,
         body {
           padding: 0;

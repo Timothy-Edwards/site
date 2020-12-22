@@ -1,34 +1,51 @@
 .card {
-    margin: 1rem;
-    flex-basis: 45%;
-    padding: 1.5rem;
-    text-align: left;
-    color: inherit;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
-    min-width: 300px;
-    border: 1px solid gray;
-    box-shadow: -3px 3px #316D89;
-  }
+  margin: 1rem;
+  flex-basis: 100%;
+  padding: 1rem;
+  color: inherit;
+  border-radius: 3px;
+}
 
-  .card:hover,
-  .card:focus,
-  .card:active {
-    box-shadow: -5px 5px #316D89;
-    border: 1px solid #316D89;
-  }
+.cardContent {
+  text-decoration: none;
+  max-width: 500px;
+  margin: auto;
+}
 
-  .card h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.25rem;
-    font-family: consolas;
-  }
+.cardContent h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.75rem;
+  font-family: consolas;
+  overflow-wrap: break-word;
+}
 
-  .card p {
-    margin: 0;
-    line-height: 1.5;
-    max-height: 4rem;
-    text-overflow: elipsis;
-    overflow-y: hidden;
-  }
+.cardContent h3:hover,
+.cardContent h3:focus,
+.card h3:active {
+  text-decoration: underline;
+}
+
+.cardContent a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cardContent p {
+  margin: 0;
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+  max-height: 3.5rem;
+  overflow: hidden;
+  text-align: justify;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+
+  /* @supports (-webkit-line-clamp: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  } */
+}
